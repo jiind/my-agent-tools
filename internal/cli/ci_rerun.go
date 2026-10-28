@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/east-true/my-agent-tools/internal/command"
-	"github.com/east-true/my-agent-tools/internal/github"
+	"github.com/jiind/my-agent-tools/internal/command"
+	"github.com/jiind/my-agent-tools/internal/github"
 )
 
 func runCIRerun(ctx context.Context, args []string, out, stderr io.Writer, runner command.Runner, newAPI func(context.Context, command.Runner) (github.API, error)) int {

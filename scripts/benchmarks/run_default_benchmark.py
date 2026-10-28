@@ -169,7 +169,7 @@ def build(root, source):
     # Retain NewAPI's production cache/retry transport and state provider; only
     # the API base URL is cloned to localhost, matching the gh wrapper boundary.
     (root / 'main-overlay.go').write_text('''package main
-import("context";"os";"fmt";"github.com/east-true/my-agent-tools/internal/cli";"github.com/east-true/my-agent-tools/internal/github";"github.com/east-true/my-agent-tools/internal/command";sdk "github.com/google/go-github/v92/github")
+import("context";"os";"fmt";"github.com/jiind/my-agent-tools/internal/cli";"github.com/jiind/my-agent-tools/internal/github";"github.com/jiind/my-agent-tools/internal/command";sdk "github.com/google/go-github/v92/github")
 func main(){ctx:=context.Background(); api,err:=github.NewAPI(ctx,command.Exec{});if err!=nil{fmt.Fprintln(os.Stderr,err);os.Exit(1)}; concrete:=api.(github.SDK);base:=os.Getenv("BRANCH_BENCHMARK_URL")+"/";concrete.Client,err=concrete.Client.Clone(sdk.WithURLs(&base,nil));if err!=nil{fmt.Fprintln(os.Stderr,err);os.Exit(1)};os.Exit(cli.RunBranchBenchmark(ctx,os.Args[1:],os.Stdin,os.Stdout,os.Stderr,concrete))}
 ''', encoding='utf-8')
     subprocess.run(['go','build','-buildvcs=false','-overlay',str(root/'overlay.json'),'-o',str(root/'bin/tools'),'./cmd/tools'],cwd=source,check=True)

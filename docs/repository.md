@@ -19,14 +19,14 @@ Non-provider pattern scanning and automatic validity checks remain disabled: Git
 `.github/repository-settings.json` contains the repository settings accepted by GitHub's [Update a repository API](https://docs.github.com/en/rest/repos/repos#update-a-repository). An administrator can apply the reviewed settings with:
 
 ```sh
-gh api --method PATCH repos/east-true/my-agent-tools --input .github/repository-settings.json
-gh api --method PUT repos/east-true/my-agent-tools/actions/permissions/workflow \
+gh api --method PATCH repos/jiind/my-agent-tools --input .github/repository-settings.json
+gh api --method PUT repos/jiind/my-agent-tools/actions/permissions/workflow \
   -f default_workflow_permissions=read -F can_approve_pull_request_reviews=false
-gh api --method PUT repos/east-true/my-agent-tools/actions/permissions/fork-pr-contributor-approval \
+gh api --method PUT repos/jiind/my-agent-tools/actions/permissions/fork-pr-contributor-approval \
   -f approval_policy=all_external_contributors
-gh api --method PUT repos/east-true/my-agent-tools/vulnerability-alerts
-gh api --method PUT repos/east-true/my-agent-tools/automated-security-fixes
-gh api --method PUT repos/east-true/my-agent-tools/private-vulnerability-reporting
+gh api --method PUT repos/jiind/my-agent-tools/vulnerability-alerts
+gh api --method PUT repos/jiind/my-agent-tools/automated-security-fixes
+gh api --method PUT repos/jiind/my-agent-tools/private-vulnerability-reporting
 ```
 
 These commands change live GitHub settings; committing the files alone does not apply them. Verify the repository and Actions settings with GET requests after applying them. Visibility and licensing are reviewed separately from this settings file.

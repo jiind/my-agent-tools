@@ -200,8 +200,8 @@ func RunBranchBenchmark(ctx context.Context, args []string, in io.Reader, out, s
     (root / 'cli-overlay.go').write_text(original + bridge, encoding='utf-8')
     (root / 'main-overlay.go').write_text('''package main
 import("context";"net/http";"os";"time";"fmt"
- "github.com/east-true/my-agent-tools/internal/cli"
- "github.com/east-true/my-agent-tools/internal/github"
+ "github.com/jiind/my-agent-tools/internal/cli"
+ "github.com/jiind/my-agent-tools/internal/github"
  sdk "github.com/google/go-github/v92/github")
 func main(){base:=os.Getenv("BRANCH_BENCHMARK_URL")+"/"
  client,err:=sdk.NewClient(sdk.WithHTTPClient(&http.Client{Timeout:30*time.Second}),sdk.WithURLs(&base,nil))

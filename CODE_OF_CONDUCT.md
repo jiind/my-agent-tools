@@ -13,7 +13,7 @@ Harassment, discrimination, threats, sexual advances, personal attacks, doxxing,
 
 ## Reporting
 
-For conduct concerns, check the [maintainer's GitHub profile](https://github.com/east-true) for available contact options. Include links or other relevant context and describe what happened. English and Korean are welcome. Do not publish sensitive details in a public issue.
+For conduct concerns, check the [maintainer's GitHub profile](https://github.com/jiind) for available contact options. Include links or other relevant context and describe what happened. English and Korean are welcome. Do not publish sensitive details in a public issue.
 
 The maintainer will review reports and limit disclosure to what is necessary to investigate and respond. Reporters may describe their preferred follow-up or confidentiality needs. Retaliation against someone who reports a concern or participates in an investigation is unacceptable.
 

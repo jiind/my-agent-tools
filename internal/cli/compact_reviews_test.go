@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/east-true/my-agent-tools/internal/github"
+	"github.com/jiind/my-agent-tools/internal/github"
 	"github.com/tiktoken-go/tokenizer"
 )
 

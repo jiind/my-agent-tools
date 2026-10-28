@@ -16,7 +16,10 @@ description = "Published benchmark source SHA-256 fingerprints"
 targetRules = ["generic-api-key"]
 condition = "AND"
 regexTarget = "line"
-paths = ['''^docs/benchmarks/github/(?:data/study[^/]*\.json|pr/reviews-output\.json)$''']
+paths = [
+  '''^docs/benchmarks/github/(?:data/study[^/]*\.json|pr/reviews-output\.json)$''',
+  '''^docs/benchmarks/completion/data/(?:selected-v2|recovery-v1)\.json$''',
+]
 regexes = ['''^\s*"internal/github/api\.go":\s*"[a-f0-9]{64}",?\s*$''']
 
 [[allowlists]]
@@ -24,7 +27,10 @@ description = "Published benchmark numeric standard deviations and paired percen
 targetRules = ["korean-resident-registration-number"]
 condition = "AND"
 regexTarget = "line"
-paths = ['''^docs/benchmarks/github/data/study[^/]*\.json$''']
+paths = [
+  '''^docs/benchmarks/github/data/study[^/]*\.json$''',
+  '''^docs/benchmarks/usage/data/(?:reviews-v4|workflows-v6)\.json$''',
+]
 regexes = ['''^\s*"(?:stdev|(?:uncached|total)_change_percent)":\s*-?[0-9]+\.[0-9]+,?\s*$''']
 
 [[rules]]

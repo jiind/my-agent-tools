@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/east-true/my-agent-tools/internal/github"
+	"github.com/jiind/my-agent-tools/internal/github"
 )
 
 type inspectionState struct {

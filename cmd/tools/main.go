@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/east-true/my-agent-tools/internal/cli"
+	"github.com/jiind/my-agent-tools/internal/cli"
 )
 
 func main() {

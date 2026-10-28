@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/east-true/my-agent-tools/internal/command"
 	sdk "github.com/google/go-github/v92/github"
+	"github.com/jiind/my-agent-tools/internal/command"
 )
 
 type API interface {

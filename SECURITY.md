@@ -4,7 +4,7 @@ The project is under development. Security fixes target the current default bran
 
 ## Report a vulnerability
 
-Use [GitHub private vulnerability reporting](https://github.com/east-true/my-agent-tools/security/advisories/new) to report suspected vulnerabilities privately. Include the affected revision, reproduction steps, and potential impact. Use synthetic examples and redact credentials and personal data. Do not put exploit details or live secrets in public issues or discussions.
+Use [GitHub private vulnerability reporting](https://github.com/jiind/my-agent-tools/security/advisories/new) to report suspected vulnerabilities privately. Include the affected revision, reproduction steps, and potential impact. Use synthetic examples and redact credentials and personal data. Do not put exploit details or live secrets in public issues or discussions.
 
 Maintainers will assess the report and coordinate a fix and disclosure with the reporter. No guaranteed response timeframe is currently published.
 

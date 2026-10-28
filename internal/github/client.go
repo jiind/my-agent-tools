@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/east-true/my-agent-tools/internal/command"
+	"github.com/jiind/my-agent-tools/internal/command"
 )
 
 type Client struct {

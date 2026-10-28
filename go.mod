@@ -1,4 +1,4 @@
-module github.com/east-true/my-agent-tools
+module github.com/jiind/my-agent-tools
 
 go 1.26.0
 

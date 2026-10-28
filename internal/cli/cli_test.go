@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/east-true/my-agent-tools/internal/command"
-	"github.com/east-true/my-agent-tools/internal/github"
 	sdk "github.com/google/go-github/v92/github"
+	"github.com/jiind/my-agent-tools/internal/command"
+	"github.com/jiind/my-agent-tools/internal/github"
 )
 
 type fakeRunner struct{}

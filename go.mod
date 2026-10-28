@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/google/go-github/v92 v92.0.0
-	github.com/tiktoken-go/tokenizer v0.8.1
+	github.com/tiktoken-go/tokenizer v0.10.0
 )
 
 require (
